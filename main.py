@@ -30,21 +30,24 @@ For more information, you can check the task's GitHub repository:
 """
 
 import pandas as pd
-import json
-from google.colab import files
+# import json
+# from google.colab import files
 
-# Upload the file manually
-uploaded = files.upload()
+# # Upload the file manually
+# uploaded = files.upload()
 
-# Get the filename from the uploaded dictionary
-file_name = list(uploaded.keys())[0]
+# # Get the filename from the uploaded dictionary
+# file_name = list(uploaded.keys())[0]
 
-# Open and load the JSON file
-with open(file_name, "r") as f:
-    data = json.load(f)
+
+# # Open and load the JSON file
+# with open(file_name, "r") as f:
+#     data = json.load(f)
 
 # Convert JSON to a DataFrame
-df = pd.json_normalize(data)
+df = pd.read_json("2armed_bandit.json")
+
+print(df)
 
 df['response']
 
