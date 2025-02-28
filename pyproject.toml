@@ -10,4 +10,5 @@ dependencies = [
     "nbconvert>=7.16.6",
     "numpy>=2.2.3",
     "pandas>=2.2.3",
+    "seaborn>=0.13.2",
 ]
