@@ -8,3 +8,7 @@ To run this project locally:
 ``` uv sync ```
 
 3. run the jupyter notebook as usual, select the created venv as python interpreter.
+
+## Report
+
+[Report.pdf](https://github.com/user-attachments/files/23205043/Report.pdf)
